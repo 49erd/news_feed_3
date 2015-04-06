@@ -32,4 +32,4 @@ All your article related views should be in an `views/articles` folder. Each art
 
 ## Bonus
 
-Include some navigation links to help the user navigate the site.
+Include some navigation links to help the user navigate the site.# Daily-Planet-App
