@@ -1,12 +1,12 @@
-CREATE DATABASE articles_app;
+CREATE DATABASE newsfeed_app;
 
-\c articles_app
+\c newsfeed_app
 
-CREATE TABLE articles (
+CREATE TABLE Articles (
     id serial primary key,
     title varchar(255),
     author varchar(255),
     content text
   );
 
-ALTER TABLE articles ADD COLUMN fiction boolean;
+ALTER TABLE Articles ADD COLUMN fiction boolean;

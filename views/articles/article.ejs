@@ -8,6 +8,12 @@
   	<li>Author: <%= articleToDisplay.author  %></li>
   	<li>Content: <%= articleToDisplay.content  %></li>
   </ul>
+  <p><a href="/articles/<%= articleToDisplay.id %>/edit">Edit this article</a></p>
+  <p><a href="/articles">Go back to the article list</a></br>
+  	<form method="POST" action="/articles/<%=articleToDisplay.id%>?_method=DELETE">
+		<button type="submit">Delete This Article</button>
+  	</form>
+  </p>
 </div>
 </body>
 </html>

@@ -3,14 +3,16 @@
 <html>
 <body>
 <h1>Articles index</h1>
-<% articlesList.forEach(function(article) { %>
+<% articlesList.forEach(function(Article) { %>
 <div>
-  <a href="/articles/<%= article.id %>"><%= article.title %></a>
+  <a href="/articles/<%= Article.id %>"><%= Article.title %></a>
   <div>
-    <%= article.content %>
+    <%= Article.content %>
   </div>
 </div>
 <% }) %>
+<p><a href="/articles/new">Submit a new article</a></p>
+<a href="/">Home</a>
 </body>
 </html>
 
